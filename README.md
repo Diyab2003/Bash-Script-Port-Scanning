@@ -7,9 +7,14 @@ It checks for open ports in the range from 1 to 65535 and prints a message if a 
 ## To use this Port Scanner
 Clone this repository to your local machine:
 ```bash
-sudo git clone https://github.com/Diyab2003/Port-scanner.git
+sudo git clone https://github.com/Diyab2003/port-scanner.git
 ```
 ```
+cd port-scanner/
+```
+
+Make sure you have execute permissions for the script:
+
 ```bash
 sudo chmod +x port_scanner.sh
 ```

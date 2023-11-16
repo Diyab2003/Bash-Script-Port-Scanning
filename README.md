@@ -10,7 +10,6 @@ Clone this repository to your local machine:
 sudo git clone https://github.com/Diyab2003/Port-scanner.git
 ```
 ```
-Make sure you have execute permissions for the script:
 ```bash
 sudo chmod +x port_scanner.sh
 ```

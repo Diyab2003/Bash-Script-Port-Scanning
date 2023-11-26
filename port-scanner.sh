@@ -2,15 +2,16 @@
 
 # Simple Port Scanner
 # Usage: ./port_scanner.sh <target_ip>
+
 echo "Usage: ./port-scanner.sh [IP]"
 echo
-echo
-if ["$1" = "" ];
-then
+
+if [ "$1" = "" ]; then
   echo "Usage: ./port-scanner.sh [IP]"
 else
+  target_ip=$1
   echo "Scanning ports for $target_ip..."
-  nc -nvz $1 1-65535 > $1.txt 2>&1
+  nc -nvz $target_ip 1-65535 > "$target_ip.txt" 2>&1
+  tac "$target_ip.txt"
+  rm -rf "$target_ip.txt"
 fi
-tac $1.txt
-rm -rf $1.txt
